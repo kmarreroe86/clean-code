@@ -17,7 +17,7 @@ public class _Consumer {
         Customer johnDoe = new Customer("Jonh Doe", "999-888-7777");
         greetCustomer.accept(johnDoe);
 
-        /** BiConsumer: Represents and operation that accepts a single input argument and returns no result */
+        /** BiConsumer: Represents and operation that accepts a two input argument and returns no result */
         BiConsumer<Customer, Boolean> greetCustomerV2 = (customer, showPhoneNumber) ->
                 System.out.println("(BiConsumer) Hello " + customer.getName() +
                         ", thanks for registering phone number " +
